@@ -52,6 +52,7 @@ AI Trading Agents on Mode let you automate crypto trading using advanced LLMs (L
 You choose:
 
 * The AI model
+* Whether to Trust or Counter your agent
 * Your sub-account
 * Your indicator weights
 * Your maximum leverage
@@ -63,14 +64,13 @@ Once activated, the agent trades for you 24/7 using live market data and your ch
 
 ## 4. How AI Agents Work
 
-Every few minutes, the agent:
-
-* Reads live market data and ATR (Average True Range)
-* Processes your indicator weights (RSI, EMA, MACD, Bollinger)
-* Calculates a directional bias
-* Chooses position size based on your max leverage
-* Trades only when the signal is strong enough
-* Continuously monitors positions with stop-loss & take-profit logic
+* Reads live market data and x402 indicator values
+* Evaluates market structure using Donchian Channels
+* Assesses momentum using MACD
+* Forms a directional trade decision (long or short)
+* Applies your selected execution mode (trust or counter)
+* Selects position size within your leverage limits
+* Monitors open positions using predefined risk logic
 
 You can pause or delete the agent at any time.
 
@@ -88,14 +88,11 @@ Select which LLM will power your agent:
 
 * **GPT-5**
 * **EigenAI**
-* **Qwen3-Max**
 * **DeepSeek-V3**
 
 Each model has its own reasoning style but follows the same trading rules.
 
-<div align="center"><img src="../.gitbook/assets/step1.png" alt="Enable trading dialog" width="768"></div>
-
-***
+<figure><img src="../.gitbook/assets/Screenshot 2025-12-16 at 16.38.11.png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2 — Choose a Sub-Account**
 
@@ -112,42 +109,22 @@ Your current balance is shown so you know how much the agent can trade with.
 
 ***
 
-### **Step 3 — Signal Weight Allocation**
-
-Tell the agent how much each indicator should matter.
-
-Indicators:
-
-* **RSI** — momentum (overbought/oversold)
-* **EMA** — trend
-* **MACD** — trend strength
-* **Bollinger Bands** — volatility extremes
-
-Rules:
-
-* All weights must total **100%**.
-* Adjust using sliders or tap **Reset All to 25%**.
-
-These weights control the decision logic each cycle.
-
-<div align="center"><img src="../.gitbook/assets/step3.png" alt="Enable trading dialog" width="768"></div>
-
-***
-
-### **Step 4 — Set Max Leverage**
+### **Step 3 — Set Max Leverage**
 
 Choose the maximum leverage the agent may use.\
-**Range:** 0.5× → 2×
+**Range:** 0.5× → 5×
 
 The agent selects leverage dynamically based on signal strength but will **never exceed your limit**.
 
 The UI shows your approximate position size.
 
-<div align="center"><img src="../.gitbook/assets/step4.png" alt="Enable trading dialog" width="768"></div>
+<figure><img src="../.gitbook/assets/Screenshot 2025-12-17 at 13.35.42.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ***
 
-### **Step 5 — Choose Your Asset**
+### **Step 4 — Choose Your Asset**
 
 Pick one asset for the agent to trade:
 
@@ -163,7 +140,7 @@ One agent trades **one** asset.
 
 ***
 
-### **Step 6 — Review & Activate**
+### **Step 5 — Review & Activate**
 
 You'll see a summary of:
 
@@ -177,7 +154,9 @@ You'll see a summary of:
 Press **Create Agent**, then sign the message to activate.\
 Your agent is now live.
 
-<div align="center"><img src="../.gitbook/assets/step6.png" alt="Enable trading dialog" width="768"></div>
+<figure><img src="../.gitbook/assets/Screenshot 2025-12-17 at 14.59.14.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ***
 
