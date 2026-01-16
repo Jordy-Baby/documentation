@@ -86,13 +86,13 @@ Your UI provides a 6-step creation flow. Here is the full guide:
 
 Select which LLM will power your agent:
 
-* **GPT-5**
-* **EigenAI**
-* **DeepSeek-V3**
+* **GPT-5.1 Instant**
+* **Claude Opus 4.5**
+* **Grok 4.1 Fast Reasoning**
 
 Each model has its own reasoning style but follows the same trading rules.
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-12-16 at 16.38.11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2 — Choose a Sub-Account**
 
@@ -129,14 +129,12 @@ The UI shows your approximate position size.
 Pick one asset for the agent to trade:
 
 * **BTC**
-* **ETH** _(coming soon)_
-* **SOL** _(coming soon)_
-* **PUMP** _(coming soon)_
-* **HYPE** _(coming soon)_
+* **XAU** (Gold)
+* **XAG** (Silver)
 
-One agent trades **one** asset.
+One agent can trade **multiple** assets.
 
-<div align="center"><img src="../.gitbook/assets/step5.png" alt="Enable trading dialog" width="768"></div>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -235,11 +233,11 @@ Yes — one per sub-account.
 
 ### **Can I edit an agent after activation?**
 
-No, you can only pause or delete it.
+Yes, you can  pause or delete it.
 
 ### **Which indicators are used?**
 
-RSI, EMA, MACD, Bollinger Bands — weighted according to your sliders.
+Donchian Channel, MACD.
 
 ### **Does the agent use stop-loss logic?**
 
@@ -247,7 +245,7 @@ Yes. All agents apply logical SL/TP rules where appropriate.
 
 ### **How often does the agent trade?**
 
-Agents always have a bias, but will only take trades when multiple indicators agree.
+Agents always have a bias, but will only take trades when indicators agree.
 
 ***
 
