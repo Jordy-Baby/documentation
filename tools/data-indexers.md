@@ -10,8 +10,6 @@ The Mode HyperSync endpoint is `https://mode.hypersync.xyz`.
 
 Get started with the [HyperIndex quickstart](https://docs.envio.dev/docs/HyperIndex/quickstart?utm_source=mode&utm_medium=partner-docs) or read the [documentation](https://docs.envio.dev/?utm_source=mode&utm_medium=partner-docs).
 
-See Envio's [performance benchmarks](https://docs.envio.dev/docs/HyperIndex/benchmarking?utm_source=mode&utm_medium=partner-docs).
-
 ---
 
 ## [Goldsky](https://goldsky.com/)
